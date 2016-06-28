@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OutingMap</string>
+    <string name="home_tab">HOME</string>
+    <string name="mypage_tab">MYPAGE</string>
 </resources>
