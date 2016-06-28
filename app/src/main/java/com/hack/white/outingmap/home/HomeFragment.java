@@ -1,6 +1,6 @@
-package com.hack.white.outingmap.top;
+package com.hack.white.outingmap.home;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.hack.white.outingmap.R;
 
-public class TopFragment extends Fragment {
+public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
