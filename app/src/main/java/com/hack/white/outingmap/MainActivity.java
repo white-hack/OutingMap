@@ -7,6 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.hack.white.outingmap.mypage.MyPageFragment;
 import com.hack.white.outingmap.home.HomeFragment;
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setElevation(0f);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -53,6 +57,18 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(this);
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
