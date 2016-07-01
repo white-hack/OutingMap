@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                         return new HomeFragment();
                     case 1:
                         return new MyPageFragment();
+                    case 2:
+                        return new MyPageFragment();
+                    case 3:
+                        return new MyPageFragment();
+                    case 4:
+                        return new MyPageFragment();
+                    case 5:
+                        return new MyPageFragment();
                 }
                 return null;
             }
@@ -44,13 +52,21 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                         return getString(R.string.home_tab);
                     case 1:
                         return getString(R.string.mypage_tab);
+                    case 2:
+                        return getString(R.string.mypage_tab);
+                    case 3:
+                        return getString(R.string.mypage_tab);
+                    case 4:
+                        return getString(R.string.mypage_tab);
+                    case 5:
+                        return getString(R.string.mypage_tab);
                 }
                 return "";
             }
 
             @Override
             public int getCount() {
-                return 2;
+                return 6;
             }
         };
 

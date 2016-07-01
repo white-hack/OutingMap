@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/action_acall"
-        android:icon="@drawable/ic_add_white_48dp"
+        android:icon="@drawable/ic_add_white_24dp"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
         android:title=""/>
 
     <item
         android:id="@+id/action_call"
-        android:icon="@drawable/ic_search_white_48dp"
+        android:icon="@drawable/ic_search_white_24dp"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
         android:title=""/>
